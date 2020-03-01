@@ -28,5 +28,4 @@ router.get('/others', (req, res)=>{
     res.render('others', {user: req.user})
 })
 
-
 module.exports = router

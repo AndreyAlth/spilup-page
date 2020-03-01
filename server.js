@@ -4,6 +4,7 @@ const passportSetup = require('./config/passport-setup')
 const passport = require('passport')
 const homeRoutes = require('./routes/home-routes')
 const authRoutes = require('./routes/auth-routes')
+const certificate = require('./routes/certificate')
 const mongoose = require('mongoose')
 const keys = require('./config/keys')
 const cookieSession = require('cookie-session')
@@ -36,6 +37,7 @@ mongoose.connect(keys.mongodb.dbURI, ()=>{
 //set up routes
 app.use('/auth', authRoutes)
 app.use('/home', homeRoutes)
+app.use('/.well-known', certificate)
 
 //create home route
 app.get('/', (req,res)=>{
