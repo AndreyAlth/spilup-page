@@ -1,0 +1,135 @@
+/* css de index */
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background: #E7E7E7;
+  font-family: letra;
+}
+
+@font-face {
+  font-family: letra;
+  src: url( letra.OT);
+}
+
+
+
+
+/* header */
+
+header {
+  background: #654D99;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  /* position: absolute; */
+
+}
+
+
+
+
+/*cierre header */
+
+
+
+
+
+
+
+/* main */
+.principal .card{
+border-radius: 100px;
+transition: all 1.5s;
+box-shadow: 1px 20px 1em #C6C5C7;
+}
+
+.principal img{
+  border-radius: 100px;
+
+}
+
+.principal  .btn-primary{
+ /* font-size: 15px; */
+ /* margin: 50px; */
+
+}
+
+.principal .card:hover{
+  background: #C2A0E5;
+}
+
+
+
+
+/* cierre main */
+
+
+
+
+
+
+footer{
+  background: #654D99;
+
+}
+
+
+
+
+h6{
+  color: white;
+}
+
+
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* diseño responsivo */
+
+/* @media screen and (max-width: 242px) {
+
+header{
+   width: 100%;
+   height: 100%;
+
+}
+
+
+}
+
+
+@media screen and (max-width: 242px) {
+   h3{
+   font-size: 18px;
+  }
+
+}
+
+
+@media screen and (max-width: 242px) {
+
+  .card img{
+    width: 50%;
+
+
+}
+
+
+
+@media screen and (max-width: 242px) {
+   .card{
+    width: 10%;
+    margin: 10px;
+  }
+} */
+
+/* diseñp */
