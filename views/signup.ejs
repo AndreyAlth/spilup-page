@@ -11,7 +11,7 @@
     <title>Registrate - Spilup</title>
     <link rel="stylesheet" href="estilos.css">
     <style>
-      
+
       :root {
         --input-padding-x: 1.5rem;
         --input-padding-y: .75rem;
@@ -26,6 +26,7 @@
         border: 0;
         border-radius: 1rem;
         box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        top: 150px;
       }
 
       .card-signin .card-title {
@@ -124,6 +125,18 @@
         background-color: #3b5998;
       }
 
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
+
+
+      .facev{
+        background: #3674EA;
+        color: white;
+      }
+
       /* Fallback for Edge
       -------------------------------------------------- */
 
@@ -166,20 +179,22 @@
                  <!-- <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                  <label for="inputEmail">Email</label>
                </div>
- 
+
                <div class="form-label-group">
                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                  <label for="inputPassword">Contraseña</label>
                </div>
- 
+
                <div class="custom-control custom-checkbox mb-3">
                  <input type="checkbox" class="custom-control-input" id="customCheck1">
                  <label class="custom-control-label" for="customCheck1">Recordar contraseña</label>
                </div>
                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registrate</button>
                <hr  class="my-4"> -->
-               <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Registrate con Google</button>
-               <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Registrate con Facebook</button>
+               <!-- <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i><a href="/auth/google"> Registrate con Google</a></button> -->
+               <!-- <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i><a href="/auth/google"> Registrate con Facebook</a></button> -->
+               <a class="btn btn-danger w-100 mb-2 text-uppercase" href="/auth/google"  role="button"><i class="fab fa-google mr-2"></i>Inicia sesión con Google</a>
+               <a class="btn btn w-100 facev text-uppercase" href="/auth/google" role="button"><i class="fab fa-facebook-f mr-2"></i>Inicia sesión con Facebook</a>
              </form>
            </div>
          </div>
@@ -189,7 +204,7 @@
     <!-- footer -->
     <!-- <%- include ('partials/footer') %> -->
     <!-- footer -->
-    
+
 
 
   <script src="https://kit.fontawesome.com/f61c39cbe9.js" crossorigin="anonymous"></script>
