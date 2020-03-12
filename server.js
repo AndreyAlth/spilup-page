@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const passportSetup = require('./config/passport-setup')
+const passportSetupFacebook = require('./config/passport-setup-facebook')
 const passport = require('passport')
 const homeRoutes = require('./routes/home-routes')
 const authRoutes = require('./routes/auth-routes')

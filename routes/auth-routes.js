@@ -18,8 +18,15 @@ router.get('/google', passport.authenticate('google',{
 router.get('/google/redirect', passport.authenticate('google'), (req, res)=>{
     res.render('home', {user: req.user})
 })
-router.get('/facebook', (req, res)=>{
-    res.redirect('/', {user: req.user})
-})
+router.get('/facebook', passport.authenticate('facebook',{
+    //scope: [profile]
+}))
+
+router.get('/facebook/redirect', 
+    passport.authenticate('facebook'),
+    (req, res)=>{
+        res.render('home', {user: req.user})
+    }
+)
 
 module.exports = router
