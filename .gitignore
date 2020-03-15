@@ -3,3 +3,7 @@
 
 #ignorings keys
 config/keys.js
+
+#ignoring ssl certificate
+.well-known/
+routes/certificate.js

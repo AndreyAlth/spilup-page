@@ -58,6 +58,4 @@ router.get('/resis', (req, res)=>{
   res.render('glues', {user: req.user})
 })
 
-
-
 module.exports = router
