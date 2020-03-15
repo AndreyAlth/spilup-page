@@ -32,6 +32,12 @@ header {
 }
 
 
+.cerrar{
+color: white;
+text-decoration: none;
+
+}
+
 
 
 /*cierre header */
@@ -64,7 +70,6 @@ box-shadow: 18px 12px 1em #C6C5C7;
 .principal .card:hover{
   background: #C2A0E5;
 }
-
 
 
 
@@ -126,3 +131,31 @@ footer a{
 
 
 /* diseñp */
+
+
+
+/* diseño responsivo carusel 271 pixeles */
+
+/* @media screen and (max-width: 271px) {
+
+.carta{
+width: 90%;
+height: 90%;
+}
+
+
+}
+
+
+
+.imagen{
+height: 100%;
+width: 100%;
+
+} */
+
+
+
+
+
+/* cierre de diseño responsivo 271 pixeles */
