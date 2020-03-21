@@ -31,19 +31,93 @@ header {
 
 }
 
+.carrito{
+  position: relative;
+  left: 900px;
+}
 
-.cerrar{
-color: white;
-text-decoration: none;
-
+@media screen and (max-width: 351px) {
+  .carrito{
+    right: 950px;
+    left: 0px;
+  }
 }
 
 
+
+
+.spilup{
+position: relative;
+bottom: 8px;
+}
 
 /*cierre header */
 
 
 
+
+
+/* header perfil */
+.boton{
+  margin: 0px;
+  font-size: 13px;
+  bottom: 3px;
+
+}
+
+
+
+.circulo{
+  font-size: 90px;
+  text-indent: 35px;
+  color: gray;
+
+}
+
+.name{
+  color: blue;
+}
+
+.cerrar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+
+}
+
+.bottom a{
+  text-decoration: none;
+}
+
+
+.cerrar:hover{
+  color: white;
+}
+
+
+
+.bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50px;
+  padding: 2px 2px;
+}
+
+.miperfil{
+  font-size: 13px;
+  text-align: center;
+  font-family: letra;
+  position: relative;
+  top: 10px;
+
+}
+
+/* header perfil cierre */
 
 
 
@@ -78,7 +152,7 @@ box-shadow: 18px 12px 1em #C6C5C7;
 
 
 
-
+/* footer */
 
 footer{
   background: #654D99;
@@ -102,6 +176,7 @@ footer a{
  margin: 5px;
 }
 
+/* footer cierre */
 
 
 
@@ -134,13 +209,32 @@ footer a{
 
 
 
-/* diseño responsivo carusel 271 pixeles */
+/* diseño responsivo header perfil */
+@media screen and (max-width: 351px) {
 
-/* @media screen and (max-width: 271px) {
+.grupo .bajar{
+  /* display: none; */
+}
 
-.carta{
-width: 90%;
-height: 90%;
+
+}
+
+/* diseño responsivo header perfil */
+
+
+
+
+/* responsive modal inicio */
+
+@media screen and (max-width: 2000px) {
+
+
+ .ff{
+  display: none;
+}
+
+.gran{
+  display: none;
 }
 
 
@@ -148,14 +242,7 @@ height: 90%;
 
 
 
-.imagen{
-height: 100%;
-width: 100%;
-
-} */
 
 
 
-
-
-/* cierre de diseño responsivo 271 pixeles */
+/* responsive modal cierre */

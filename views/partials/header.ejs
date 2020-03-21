@@ -39,7 +39,20 @@
                   <li class="nav-item active perfil">
                   <!-- <a class="nav-link" data-toggle="modal" data-target="#user" href="/auth/login"><i class="fas fa-user-circle mr-2"></i><%= user.username %><span class="sr-only">(current)</span></a> -->
                     <!-- <a class="nav-link" href="/auth/logout">sapplr<span class="sr-only">(current)</span></a> -->
-                    <a class="nav-link" href="/auth/login"  data-toggle="modal" data-target="#user"><i class="fas fa-user-circle mr-2"></i><%= user.username %><span class="sr-only">(current)</span></a>
+                    <!-- <a class="nav-link" href="/auth/login"  data-toggle="modal" data-target="#user"><i class="fas fa-user-circle mr-2"></i><%= user.username %><span class="sr-only">(current)</span></a> -->
+                    <div class="btn-group btn-group-vertical grupo">
+                      <button class="btn btn-sm dropdown boton" type="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                        <a class="nav-link" href="/auth/login"  data-toggle="modal" data-target="#user"><i class="fas fa-user-circle mr-2"></i><%= user.username %><span class="sr-only">(current)</span></a>
+                      </button>
+                      <div class="dropdown-menu bajar">
+                        <i class="fas fa-user-circle mr-2 circulo"></i>
+                        <h1 class="miperfil">Hola, <%= user.username %> </h1> <br>
+                        <hr>
+                        <button class="btn-primary bottom">
+                        <a class="nav- cerrar" href="/auth/logout">Cerrar sesión</a>
+                        </button>
+                      </div>
+                    </div>
                   </li>
                 <%}%>
                 <li class="nav-item active ml-2 carrito">
@@ -47,42 +60,27 @@
                   <input type="hidden" name="cmd" value="_s-xclick">
                   <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
                   <input type="image" src="http://cavaguilera.com/wp-content/themes/foundationpress_2019-04-24_19-02/dist/assets/images/iconos/carritoMobile.png" width="35" title="Ver carrito" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-                  <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1"
                   </form>
                </li>
-        </ul>
+
         <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form> -->
       </div>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
     </nav>
 </header>
 <!-- cierre del header -->
 
+
+
+
+
+
 <!-- modal salir -->
 
-<div class="modal fade" id="user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLabel">Mi cuenta</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="false">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <button type="button" class="btn btn-primary">
-        <a class="nav-dark cerrar" href="/auth/logout">Cerrar sesión</a>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <!-- cierre de salir -->
 
