@@ -32,14 +32,14 @@ header {
 }
 
 .carrito{
-  position: relative;
-  left: 900px;
+  position: absolute;
+  right: 1%;
 }
 
 @media screen and (max-width: 351px) {
   .carrito{
-    right: 950px;
-    left: 0px;
+    bottom: 0;
+    left: 83%;
   }
 }
 
